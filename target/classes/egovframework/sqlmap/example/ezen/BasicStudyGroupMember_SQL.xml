@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="BasicStudyGroupMemberSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="basicStudyGroupMemberVO" type="ezen.service.vo.BasicStudyGroupMemberVO"/>
+	
+<!-- BASIC_STUDY_GROUPMEMBER -->
+<insert id="basicStudyGroupMemberDAO.insertBASIC_STUDY_GROUPMEMBER">
+<!-- 	INSERT INTO BASIC_STUDY_GROUPMEMBER
+				(
+				 BSG_ID,
+				 BSG_BSBID,
+				 BSG_MEMBERID,
+				 BSG_REGDATE,
+				 BSG_COMM
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="basicStudyGroupMemberDAO.updateBASIC_STUDY_GROUPMEMBER">
+<!-- 		UPDATE BASIC_STUDY_GROUPMEMBER 
+		SET  
+		WHERE  -->
+	</update>
+
+
+	<delete  id="basicStudyGroupMemberDAO.deleteBASIC_STUDY_GROUPMEMBER">
+<!-- 		DELETE FROM BASIC_STUDY_GROUPMEMBER 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="basicStudyGroupMemberDAO.selectBASIC_STUDY_GROUPMEMBER" resultClass="egovMap">
+<!-- 		SELECT 	
+				 BSG_ID,
+				 BSG_BSBID,
+				 BSG_MEMBERID,
+				 BSG_REGDATE,
+				 BSG_COMM
+		FROM 
+				 BASIC_STUDY_GROUPMEMBER
+		WHERE -->
+	</select>
+
+	<select id="basicStudyGroupMemberDAO.selectBASIC_STUDY_GROUPMEMBER_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				 BSG_ID,
+				 BSG_BSBID,
+				 BSG_MEMBERID,
+				 BSG_REGDATE,
+				 BSG_COMM
+		FROM 
+				 BASIC_STUDY_GROUPMEMBER
+		WHERE -->
+	</select>
+	
+	<select id="basicStudyGroupMemberDAO.selectBASIC_STUDY_GROUPMEMBER_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						 BSG_ID,
+						 BSG_BSBID,
+						 BSG_MEMBERID,
+						 BSG_REGDATE,
+						 BSG_COMM
+					)
+		FROM
+				BASIC_STUDY_GROUPMEMBER -->
+	</select>
+
+
+	
+</sqlMap>
+

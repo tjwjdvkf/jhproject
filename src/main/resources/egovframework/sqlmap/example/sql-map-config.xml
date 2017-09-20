@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	
+<!-- 	<sqlMap resource="egovframework/sqlmap/example/ezen/Emp_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/Board_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/DataBoard_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/Member_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/Rsch_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/CtgSQL.xml"/> -->
+	
+	<sqlMap resource="egovframework/sqlmap/example/ezen/BasicStudyBas_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/BasicStudyGallary_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/ReferClaim_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/BasicStudyGroupMember_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/BasicStudySupt_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/ReferManager_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/LogUserCount_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/ReferFaq_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/ReferCategory_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/BasicMember_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/BasicMemberRef_SQL.xml"/>
+	<sqlMap resource="egovframework/sqlmap/example/ezen/ReferHashtag_SQL.xml"/>
+	
+	
+</sqlMapConfig>

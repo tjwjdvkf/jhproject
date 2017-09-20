@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="BasicStudySuptSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="basicStudySuptVO" type="ezen.service.vo.BasicStudySuptVO"/>
+	
+<!-- BASIC_STUDY_SUPT -->
+<insert id="basicStudySuptDAO.insertBASIC_STUDY_SUPT">
+<!-- 	INSERT INTO BASIC_STUDY_SUPT
+				(
+				BSS_ID,
+				BSS_BSBID,
+				BSS_TARGET,
+				BSS_OT_DATE,
+				BSS_CONTEXT,
+				BSS_SDATE,
+				BSS_EDATE
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="basicStudySuptDAO.updateBASIC_STUDY_SUPT">
+<!-- 		UPDATE BASIC_STUDY_SUPT 
+		SET  
+		WHERE  -->
+	</update>
+
+
+	<delete  id="basicStudySuptDAO.deleteBASIC_STUDY_SUPT">
+<!-- 		DELETE FROM BASIC_STUDY_SUPT 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="basicStudySuptDAO.selectBASIC_STUDY_SUPT" resultClass="egovMap">
+<!-- 		SELECT 	
+				BSS_ID,
+				BSS_BSBID,
+				BSS_TARGET,
+				BSS_OT_DATE,
+				BSS_CONTEXT,
+				BSS_SDATE,
+				BSS_EDATE
+		FROM 
+				BASIC_STUDY_SUPT
+		WHERE -->
+	</select>
+
+	<select id="basicStudySuptDAO.selectBASIC_STUDY_SUPT_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				BSS_ID,
+				BSS_BSBID,
+				BSS_TARGET,
+				BSS_OT_DATE,
+				BSS_CONTEXT,
+				BSS_SDATE,
+				BSS_EDATE
+		FROM 
+				BASIC_STUDY_SUPT
+		WHERE -->
+	</select>
+	
+	<select id="basicStudySuptDAO.selectBASIC_STUDY_SUPT_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						BSS_ID,
+						BSS_BSBID,
+						BSS_TARGET,
+						BSS_OT_DATE,
+						BSS_CONTEXT,
+						BSS_SDATE,
+						BSS_EDATE
+					)
+		FROM
+				BASIC_STUDY_SUPT -->
+	</select>
+
+	
+</sqlMap>
+

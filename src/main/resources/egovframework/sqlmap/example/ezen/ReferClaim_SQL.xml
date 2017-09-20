@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ReferClaimSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="referClaimVO" type="ezen.service.vo.ReferClaimVO"/>
+	
+<!-- REFER_CLAIM -->
+<insert id="referClaimDAO.insertREFER_CLAIM">
+<!-- 	INSERT INTO REFER_CLAIM
+				(
+				 RCM_ID,
+				 RCM_STEP1,
+				 RCM_STEP2,
+				 RCM_NAME,
+				 RCM_MEMBERID,
+				 RCM_CONTEXT,
+				 RCM_REGDATE,
+				 RCM_COMMITYN
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="referClaimDAO.updateREFER_CLAIM">
+<!-- 		UPDATE REFER_CLAIM 
+		SET  
+		WHERE --> 
+	</update>
+
+
+	<delete  id="referClaimDAO.deleteREFER_CLAIM">
+<!-- 		DELETE FROM REFER_CLAIM 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="referClaimDAO.selectREFER_CLAIM" resultClass="egovMap">
+<!-- 		SELECT 	
+				 RCM_ID,
+				 RCM_STEP1,
+				 RCM_STEP2,
+				 RCM_NAME,
+				 RCM_MEMBERID,
+				 RCM_CONTEXT,
+				 RCM_REGDATE,
+				 RCM_COMMITYN
+		FROM 
+				 REFER_CLAIM
+		WHERE -->
+	</select>
+
+	<select id="referClaimDAO.selectREFER_CLAIM_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				 RCM_ID,
+				 RCM_STEP1,
+				 RCM_STEP2,
+				 RCM_NAME,
+				 RCM_MEMBERID,
+				 RCM_CONTEXT,
+				 RCM_REGDATE,
+				 RCM_COMMITYN
+		FROM 
+				 REFER_CLAIM
+		WHERE -->
+	</select>
+	
+	<select id="referClaimDAO.selectREFER_CLAIM_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						 RCM_ID,
+						 RCM_STEP1,
+						 RCM_STEP2,
+						 RCM_NAME,
+						 RCM_MEMBERID,
+						 RCM_CONTEXT,
+						 RCM_REGDATE,
+						 RCM_COMMITYN
+					)
+		FROM
+				REFER_CLAIM -->
+	</select>
+
+	
+</sqlMap>
+

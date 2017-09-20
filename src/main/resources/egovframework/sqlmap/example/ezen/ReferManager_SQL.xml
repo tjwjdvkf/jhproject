@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ReferManagerSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="referManagerVO" type="ezen.service.vo.ReferManagerVO"/>
+	
+<!-- REFER_MANAGER -->
+<insert id="referManagerDAO.insertREFER_MANAGER">
+<!-- 	INSERT INTO REFER_MANAGER
+				(
+				RM_ID,
+				RM_PASSWORD,
+				RM_EMAIL,
+				RM_NAME,
+				RM_REGDATE,
+				RM_PHONE
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="referManagerDAO.updateREFER_MANAGER">
+<!-- 		UPDATE REFER_MANAGER 
+		SET  
+		WHERE  -->
+	</update>
+
+
+	<delete  id="referManagerDAO.deleteREFER_MANAGER">
+<!-- 		DELETE FROM REFER_MANAGER 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="referManagerDAO.selectREFER_MANAGER" resultClass="egovMap">
+<!-- 		SELECT 	
+				RM_ID,
+				RM_PASSWORD,
+				RM_EMAIL,
+				RM_NAME,
+				RM_REGDATE,
+				RM_PHONE
+		FROM 
+				REFER_MANAGER
+		WHERE -->
+	</select>
+
+	<select id="referManagerDAO.selectREFER_MANAGER_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				RM_ID,
+				RM_PASSWORD,
+				RM_EMAIL,
+				RM_NAME,
+				RM_REGDATE,
+				RM_PHONE
+		FROM 
+				REFER_MANAGER
+		WHERE -->
+	</select>
+	
+	<select id="referManagerDAO.selectREFER_MANAGER_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						RM_ID,
+						RM_PASSWORD,
+						RM_EMAIL,
+						RM_NAME,
+						RM_REGDATE,
+						RM_PHONE
+					)
+		FROM
+				REFER_MANAGER -->
+	</select>
+
+	
+</sqlMap>
+

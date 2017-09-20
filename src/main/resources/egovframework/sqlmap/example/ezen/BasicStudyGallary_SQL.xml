@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="BasicStudyGallarySpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="basicStudyGallaryVO" type="ezen.service.vo.BasicStudyGallaryVO"/>
+	
+
+<!-- BASIC_STUDY_GALLARY -->
+<insert id="basicStudyGallaryDAO.insertBASIC_STUDY_GALLARY">
+<!-- 	INSERT INTO BASIC_STUDY_GALLARY 
+				(
+				 BSGL_ID,
+				 BSGL_BSBID,
+				 BSGL_NAME,
+				 BSGL_PATH,
+				 BSGL_MEMBERID
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="basicStudyGallaryDAO.updateBASIC_STUDY_GALLARY">
+<!-- 		UPDATE BASIC_STUDY_GALLARY 
+		SET  
+		WHERE  -->
+	</update>
+
+
+	<delete  id="basicStudyGallaryDAO.deleteBASIC_STUDY_GALLARY">
+<!-- 		DELETE FROM BASIC_STUDY_GALLARY 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="basicStudyGallaryDAO.selectBASIC_STUDY_GALLARY" resultClass="egovMap">
+<!-- 		SELECT 	
+				 BSGL_ID,
+				 BSGL_BSBID,
+				 BSGL_NAME,
+				 BSGL_PATH,
+				 BSGL_MEMBERID
+		FROM 
+				 BASIC_STUDY_GALLARY
+		WHERE -->
+	</select>
+
+	<select id="basicStudyGallaryDAO.selectBASIC_STUDY_GALLARY_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				 BSGL_ID,
+				 BSGL_BSBID,
+				 BSGL_NAME,
+				 BSGL_PATH,
+				 BSGL_MEMBERID
+		FROM 
+				 BASIC_STUDY_GALLARY
+		WHERE -->
+	</select>
+
+	<select id="basicStudyGallaryDAO.selectBASIC_STUDY_GALLARY_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						 BSGL_ID,
+						 BSGL_BSBID,
+						 BSGL_NAME,
+						 BSGL_PATH,
+						 BSGL_MEMBERID
+					)
+		FROM
+				BASIC_STUDY_GALLARY -->
+	</select>
+
+	
+</sqlMap>
+

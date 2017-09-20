@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ReferFaqSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="referFaqVO" type="ezen.service.vo.ReferFaqVO"/>
+	
+<!-- REFER_FAQ -->
+<insert id="referFaqDAO.insertREFER_FAQ">
+<!-- 	INSERT INTO REFER_FAQ
+				(
+				RF_ID,
+				RF_STEP1,
+				RF_STEP2,
+				RF_NAME,
+				RF_TITLE,
+				RF_CONTEXT,
+				RF_REGDATE,
+				RF_FAVORITE
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="referFaqDAO.updateREFER_FAQ">
+<!-- 		UPDATE REFER_FAQ 
+		SET  
+		WHERE  -->
+	</update>
+
+
+	<delete  id="referFaqDAO.deleteREFER_FAQ">
+<!-- 		DELETE FROM REFER_FAQ 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="referFaqDAO.selectREFER_FAQ" resultClass="egovMap">
+<!-- 		SELECT 	
+				RF_ID,
+				RF_STEP1,
+				RF_STEP2,
+				RF_NAME,
+				RF_TITLE,
+				RF_CONTEXT,
+				RF_REGDATE,
+				RF_FAVORITE
+		FROM 
+				REFER_FAQ
+		WHERE -->
+	</select>
+
+	<select id="referFaqDAO.selectREFER_FAQ_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				RF_ID,
+				RF_STEP1,
+				RF_STEP2,
+				RF_NAME,
+				RF_TITLE,
+				RF_CONTEXT,
+				RF_REGDATE,
+				RF_FAVORITE
+		FROM 
+				REFER_FAQ
+		WHERE -->
+	</select>
+	
+	<select id="referFaqDAO.selectREFER_FAQ_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						RF_ID,
+						RF_STEP1,
+						RF_STEP2,
+						RF_NAME,
+						RF_TITLE,
+						RF_CONTEXT,
+						RF_REGDATE,
+						RF_FAVORITE
+					)
+		FROM
+				REFER_FAQ -->
+	</select>
+
+	
+</sqlMap>
+

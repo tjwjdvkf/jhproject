@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="BasicMemberSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="basicMemberVO" type="ezen.service.vo.BasicMemberVO"/>
+	
+	
+	<insert id="basicMemberDAO.insertBASIC_MEMBER1">
+
+	</insert>
+	
+	<update id="basicMemberDAO.updateBASIC_MEMBER">
+
+	</update>
+
+
+	<delete  id="basicMemberDAO.deleteBASIC_MEMBER">
+
+	</delete>
+	
+
+	
+	<select id="basicMemberDAO.selectBASIC_MEMBER" resultClass="egovMap">
+
+	</select>
+
+	<select id="basicMemberDAO.selectBASIC_MEMBER_Detail" resultClass="egovMap">
+
+	</select>
+	
+	<select id="basicMemberDAO.selectBASIC_MEMBER_Count" resultClass="egovMap">
+
+	</select>
+
+
+	
+</sqlMap>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+ "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<!-- Default Main Template !! -->
+	<!--  관리자 페이지 -->
+	<definition name="layout1" template="/WEB-INF/config/tiles/layout1.jsp">
+		<put-attribute name="title" value="프로젝트" type="string" />
+		<put-attribute name="topMenu" value="/WEB-INF/jsp/tiles/topMenu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/tiles/footer.jsp" />
+		<put-attribute name="content" />
+	</definition>
+
+	<!--  사용자 페이지 -->
+	<definition name="layoutUser" template="/WEB-INF/config/tiles/layoutUser.jsp">
+		<!-- 로그인이나 서치바.  -->
+		<put-attribute name="header" value="/WEB-INF/jsp/user/user_header/uheader.jsp" />
+		<!--  카테고리 / 탑 메뉴 -->
+		<put-attribute name="topMenu" value="/WEB-INF/jsp/user/user_menu/uMenu.jsp" />
+		<!-- 메인 -->
+		<put-attribute name="content" />
+		<!-- 발바닥 -->
+		<put-attribute name="footer" value="/WEB-INF/jsp/user/user_footer/ufooter.jsp" />
+	</definition>
+
+
+	<!-- <definition name="layout2" template="/WEB-INF/config/tiles/layout2.jsp"> 
+		<put-attribute name="title" value="샘플" type="string" /> <put-attribute name="content" 
+		/> </definition> -->
+
+	<definition name="admin/*" extends="layout1">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/{1}.jsp" />
+	</definition>
+
+	<!-- 사용자 페이지... -->
+	<definition name="user/*" extends="layoutUser">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/{1}.jsp" />
+	</definition>
+
+	<!-- <definition name="/*" extends="layout2"> <put-attribute name="content" 
+		value="/WEB-INF/jsp/{1}.jsp" /> </definition> -->
+
+</tiles-definitions>

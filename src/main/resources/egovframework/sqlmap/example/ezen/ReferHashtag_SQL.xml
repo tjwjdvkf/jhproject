@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ReferHashtagSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="referHashtagVO" type="ezen.service.vo.ReferHashtagVO"/>
+	
+<!-- REFER_HASHTAG -->
+<insert id="referHashtagDAO.insertREFER_HASHTAG">
+<!-- 	INSERT INTO REFER_HASHTAG
+				(
+				RH_ID,
+				RH_NAME,
+				RH_USINGHIT,
+				RH_REGDATE
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="referHashtagDAO.updateREFER_HASHTAG">
+<!-- 		UPDATE REFER_HASHTAG 
+		SET  
+		WHERE  -->
+	</update>
+
+
+	<delete  id="referHashtagDAO.deleteREFER_HASHTAG">
+<!-- 		DELETE FROM REFER_HASHTAG 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="referHashtagDAO.selectREFER_HASHTAG" resultClass="egovMap">
+<!-- 		SELECT 	
+				RH_ID,
+				RH_NAME,
+				RH_USINGHIT,
+				RH_REGDATE
+		FROM 
+				REFER_HASHTAG
+		WHERE -->
+	</select>
+
+	<select id="referHashtagDAO.selectREFER_HASHTAG_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				RH_ID,
+				RH_NAME,
+				RH_USINGHIT,
+				RH_REGDATE
+		FROM 
+				REFER_HASHTAG
+		WHERE -->
+	</select>
+	
+	<select id="referHashtagDAO.selectREFER_HASHTAG_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						RH_ID,
+						RH_NAME,
+						RH_USINGHIT,
+						RH_REGDATE
+					)
+		FROM
+				REFER_HASHTAG -->
+	</select>
+	
+	
+</sqlMap>
+

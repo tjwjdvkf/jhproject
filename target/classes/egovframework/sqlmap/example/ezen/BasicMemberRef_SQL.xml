@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="BasicMemberRefSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="basicMemberRefVO" type="ezen.service.vo.BasicMemberRefVO"/>
+	
+
+	
+<!-- BASIC_MEMBER_REF -->
+<insert id="basicMemberRefDAO.insertBASIC_MEMBER_REF">
+	<!-- INSERT INTO BASIC_MEMBER_REF
+				(
+				BMR_MEMBERID,
+				BMR_POSTNUM,
+				BMR_ADDR1,
+				BMR_ADDR,
+				BMR_BIRTHDAY,
+				BMR_GENDER
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="basicMemberRefDAO.updateBASIC_MEMBER_REF">
+<!-- 		UPDATE BASIC_MEMBER_REF 
+		SET  
+		WHERE  -->
+	</update>
+
+
+	<delete  id="basicMemberRefDAO.deleteBASIC_MEMBER_REF">
+<!-- 		DELETE FROM BASIC_MEMBER_REF 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="basicMemberRefDAO.selectBASIC_MEMBER_REF" resultClass="egovMap">
+<!-- 		SELECT 	
+				BMR_MEMBERID,
+				BMR_POSTNUM,
+				BMR_ADDR1,
+				BMR_ADDR,
+				BMR_BIRTHDAY,
+				BMR_GENDER
+		FROM 
+				BASIC_MEMBER_REF
+		WHERE -->
+	</select>
+
+	<select id="basicMemberRefDAO.selectBASIC_MEMBER_REF_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				BMR_MEMBERID,
+				BMR_POSTNUM,
+				BMR_ADDR1,
+				BMR_ADDR,
+				BMR_BIRTHDAY,
+				BMR_GENDER
+		FROM 
+				BASIC_MEMBER_REF
+		WHERE -->
+	</select>
+	
+	<select id="basicMemberRefDAO.selectBASIC_MEMBER_REF_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						BMR_MEMBERID,
+						BMR_POSTNUM,
+						BMR_ADDR1,
+						BMR_ADDR,
+						BMR_BIRTHDAY,
+						BMR_GENDER
+					)
+		FROM
+				BASIC_MEMBER_REF -->
+	</select>
+
+	
+</sqlMap>
+

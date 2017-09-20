@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="BasicStudyBasSpace">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
+	<typeAlias  alias="basicStudyBasVO" type="ezen.service.vo.BasicStudyBasVO"/>
+	
+	<!-- BASIC_STUDY_BAS -->
+<insert id="basicStudyBasDAO.insertBASIC_STUDY_BAS">
+<!-- 	INSERT INTO BASIC_STUDY_BAS 
+				(BSB_ID,
+				 BSB_TITLE,
+				 BSB_MEMBERID,
+				 BSB_REGDATE,
+				 BSB_CATEGORY_STEP1,
+				 BSB_CATEGORY_STEP2,
+				 BSB_CATEGORY_STEP3,
+				 BSB_PRICE,
+				 BSB_HIT,
+				 BSB_TIMESCHEDULE,
+				 BSB_LOCATION,
+				 BSB_HASHTAGID,
+				 BSB_FAVORITEHIT
+				 )
+	values(
+			) -->
+	</insert>
+	
+	<update id="basicStudyBasDAO.updateBASIC_STUDY_BAS">
+<!-- 		UPDATE BASIC_STUDY_BAS 
+		SET  
+		WHERE  -->
+	</update>
+
+
+	<delete  id="basicStudyBasDAO.deleteBASIC_STUDY_BAS">
+<!-- 		DELETE FROM BASIC_STUDY_BAS 
+		WHERE -->
+	</delete>
+	
+
+	
+	<select id="basicStudyBasDAO.selectBASIC_STUDY_BAS" resultClass="egovMap">
+<!-- 		SELECT 	
+				 BSB_ID,
+				 BSB_TITLE,
+				 BSB_MEMBERID,
+				 BSB_REGDATE,
+				 BSB_CATEGORY_STEP1,
+				 BSB_CATEGORY_STEP2,
+				 BSB_CATEGORY_STEP3,
+				 BSB_PRICE,
+				 BSB_HIT,
+				 BSB_TIMESCHEDULE,
+				 BSB_LOCATION,
+				 BSB_HASHTAGID,
+				 BSB_FAVORITEHIT
+		FROM 
+				 BASIC_STUDY_BAS
+		WHERE -->
+	</select>
+
+	<select id="basicStudyBasDAO.selectBASIC_STUDY_BAS_Detail" resultClass="egovMap">
+<!-- 		SELECT 	
+				 BSB_ID,
+				 BSB_TITLE,
+				 BSB_MEMBERID,
+				 BSB_REGDATE,
+				 BSB_CATEGORY_STEP1,
+				 BSB_CATEGORY_STEP2,
+				 BSB_CATEGORY_STEP3,
+				 BSB_PRICE,
+				 BSB_HIT,
+				 BSB_TIMESCHEDULE,
+				 BSB_LOCATION,
+				 BSB_HASHTAGID,
+				 BSB_FAVORITEHIT
+		FROM 
+				 BASIC_STUDY_BAS
+		WHERE -->
+	</select>
+	
+	<select id="basicStudyBasDAO.selectBASIC_STUDY_BAS_Count" resultClass="egovMap">
+<!-- 		SELECT
+				COUNT(
+						 BSB_ID,
+						 BSB_TITLE,
+						 BSB_MEMBERID,
+						 BSB_REGDATE,
+						 BSB_CATEGORY_STEP1,
+						 BSB_CATEGORY_STEP2,
+						 BSB_CATEGORY_STEP3,
+						 BSB_PRICE,
+						 BSB_HIT,
+						 BSB_TIMESCHEDULE,
+						 BSB_LOCATION,
+						 BSB_HASHTAGID,
+						 BSB_FAVORITEHIT
+					)
+		FROM
+				BASIC_STUDY_BAS -->
+	</select>
+
+
+	
+</sqlMap>
+
